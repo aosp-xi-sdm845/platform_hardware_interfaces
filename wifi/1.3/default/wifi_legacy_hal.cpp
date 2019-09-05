@@ -358,8 +358,8 @@ wifi_error WifiLegacyHal::initialize() {
 
 wifi_error WifiLegacyHal::start() {
     // Ensure that we're starting in a good state.
-    CHECK(global_func_table_.wifi_initialize && !global_handle_ &&
-          iface_name_to_handle_.empty() && !awaiting_event_loop_termination_);
+//    CHECK(global_func_table_.wifi_initialize && !global_handle_ &&
+//          iface_name_to_handle_.empty() && !awaiting_event_loop_termination_);
     if (is_started_) {
         LOG(DEBUG) << "Legacy HAL already started";
         return WIFI_SUCCESS;
